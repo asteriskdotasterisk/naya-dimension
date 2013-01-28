@@ -5,7 +5,7 @@ class Home extends CI_Controller {
     private $hash_index = 777;
 
     function index() {
-        $data['main_content'] = "index";
+        $data['main_content'] = "home";
         $data['title'] = "nayaDimension";
         $data['active'] = array('home' => 'active', 'contact' => '', 'about' => '');
         //get_news('type', 'content sub string length', limit)	
@@ -16,8 +16,6 @@ class Home extends CI_Controller {
         $data['title'] = "contact";
         $data['main_content'] = "contact";
         $data['info'] = null;
-        //$data['active']="contact"
-        //$data['active'] = array('home' => '', 'about' => '', 'contact' => 'active');
         if($this->input->post("submit")){
         $this->load->model("mail_model");
         $this->mail_model->sendmail();
