@@ -44,14 +44,14 @@ $(document).ready(function(){
 			yRadius:30,
 			xPos: 480,
 			yPos: 32,
-			speed:0.15,
+			speed:0.15
 		}
 	);
 	$('#site_title h1 a').mouseenter(function(){
-		$('#bulb').css('background', 'url(img/templatemo_light_on.png) no-repeat scroll 0 0 transparent');	
+		$('#bulb').css('background', 'url(<?php echo base_url();?>img/templatemo_light_on.png) no-repeat scroll 0 0 transparent');	
 	});
 	$('#site_title h1 a').mouseleave(function(){
-		$('#bulb').css('background', 'url(img/templatemo_light_off.png) no-repeat scroll 0 0 transparent');	
+		$('#bulb').css('background', 'url(<?php echo base_url();?>img/templatemo_light_off.png) no-repeat scroll 0 0 transparent');	
 	});
 	
 });
